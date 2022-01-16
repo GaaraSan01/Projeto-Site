@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+:root{
+    --azul:#0332df;
+    --azul-escuro:#0d147a;
+    --cinza:#abd5bd;
+    --verde:#469d89;
+    --verde-esc:#036666;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    color:#fff;
+    text-decoration: none; 
+    transition: 0.3s;
+}
+a :hover {
+    opacity: 0.7;
+}
+.logo{
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Roboto;
+    background: var(--azul-escuro);
+    height: 8vh;
+}
+main {
+    background: url("img/fund.jpg") no-repeat
+    center center;
+    background-size: cover;
+    height: 92vh;
+}
+.nav-lista{
+    list-style: none;
+    display: flex;
+}
+.nav-lista li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--cinza);
+    margin: 8px;
+}
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-lista {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: var(--verde-esc);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-lista li {
+       margin-left: 0;
+       opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+.nav-lista.active {
+    transform: translateX(0);
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform:translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
