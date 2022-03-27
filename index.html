@@ -11,23 +11,194 @@
 <body>
     <header>
         <nav>
+            <a class="logo-img" href="#"><img src="img/Design sem nome (1).png" alt=""></a>
             <a class="logo" href="/index.html">Budeli Capital</a>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <ul class="nav-lista">
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Conta </a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
+                <div class="tabs">
+                    <ul class="nav-lista">
+                     <li class="tab-links"><a data-id="serviços" data-open>Serviços</a></li>
+                     <li class="tab-links1"><a data-id="contatos">Contato</a></li>
+                     <li class="tab-links2"><a data-id="sobre">Sobre</a></li>
+                     <li class="tab-links3"><a data-id="blog">Blog</a>
+                    </ul>
+                </div>
         </nav>
     </header>
     <main>
-
+        <div class="fundo">
+            <h1> Invista em seu Futuro com á <br> Budeli Capital</h1>
+            <a href="#bv">
+                Saiba mais
+            </a>
+        </div>
+        <section id="bv">
+            <div class="bem-vindo" id="bv">
+                <h1>
+                     Bem-vindo(a) Budeli Capital
+                 </h1>
+             <p>"Somos uma Fintech especializada em Investimentos e Administração de <br>
+                Carteira"</p>
+             </div>
+        </section>
+            <div class="tab-content">
+            <section id="serviços" class="serviços">
+           <h1>Conheça Nossos Serviços</h1>
+           <div class="layout1">
+               <div class="credito-consignado">
+            <h2>Crédito Consignado</h2>
+            <h3>O que á Emprestimo Consignado?</h3>
+            <p> Empréstimo consignado é uma modalidade de crédito destinada a aposentados, 
+                pensionistas e servidores públicos. No consignado,
+                o valor das parcelas de seu empréstimo é descontado automaticamente de sua folha de pagamento ou benefício do INSS.</p>
+           </div>
+           <div class="investimento">
+              <h2>Investimentos</h2>
+               <p>Invista em Nossa carteira de Investimento Renda Variável, como Ações & Fundos. </p>
+           </div>
+           <div class="renda-fixa">
+               <h2>Renda Fixa</h2>
+               <p>Também temos á Renda Fixa Budeli da qual temos uma Rentabilidade de 18% a.a.</p>
+           </div>
+           <div class="fgts">
+               <h2>Antecipe seu FGTS</h2>
+               <p>
+                   Faça á antecipação do seu FGTS, e tenha o dinheiro em mãos em até 48h.
+               </p>
+           </div>
+           </div>
+           <div class="layout2">
+               <div class="credito-veiculo">
+               <h2>
+                   Crédito de Veículos
+               </h2>
+               <p>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident illum sit eos ab perferendis aut praesentium fugit ad quidem. 
+                    Repudiandae earum repellat provident quam officiis tenetur tempora atque consequuntur doloremque.
+               </p>
+           </div>
+           <div class="seguros-budeli">
+               <h2>Seguros Budeli</h2>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ad minima amet voluptatem ex officiis nostrum reiciendis optio molestiae iusto.
+                Sapiente sint sed deserunt incidunt autem nisi repellat fugit laborum dolorem.</p>
+           </div>
+           <div class="credito-empresarial">
+               <h2>Crédito Empresarial</h2>
+               <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing. <br>
+                   Dicta repellendus officia dolor eligendi maiores a laborum odit amet,<br> deserunt numquam facere temporibus.
+                   Reiciendis commodi aperiam tempore consectetur nemo ad inventore!
+                </p>
+           </div>
+           </div>
+           
+            </section>
+            <section id="contatos" class="contato">
+            <div class="container">
+                <div class="entre-contato">
+                <h1>Entre em Contato</h1>
+                <ul>
+                    <li>Whatsapp: (41) XXXX-XXXX</li>
+                    <li>Telefone: (41) XXXX-XXXX</li>
+                    <li>Email:atendimento@budelicapital.com.br</li>
+                </ul>
+            </div>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.837003945759!2d-49.28117458544053!3d-25.44371233966452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce47a1da489ef%3A0x7196738ccfabf8be!2sR.%20Pasteur%2C%20463%20-%20Batel%2C%20Curitiba%20-%20PR%2C%2080250-104!5e0!3m2!1spt-BR!2sbr!4v1645466999029!5m2!1spt-BR!2sbr"
+                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            </div>
+            <div class="formulario-cont">
+               <form action="contatos">
+                   <div class="cont-box">
+                       <input type="text" name="nome" id="nome" class="nome-client">
+                        <label for="nome">Nome</label>
+                   </div>
+                   <div class="cont-box">
+                         <input type="email" name="contato-email" id="contato-email" class="email-client">
+                         <label for="email">Email </label>
+                   </div>
+                   <div class="cont-box">
+                        <input type="text" name="assunto" id="assunto"  class="assunto-client">
+                        <label for="assunto">Assunto </label>
+                   </div>
+                
+                    <input type="button" value="Enviar" class="enviar">
+             </form> 
+            </div>
+            
+         </section>
+         <section id="sobre" class="sobre">
+            <h1>
+                Quem Somos?
+            </h1>
+            <p>
+                
+            </p>
+         </section>
+         <section id="blog"></section>
+            </div>
+            <section class="simulador">
+             <h2>
+                    Simulador Budeli Capital
+             </h2>
+             <ul>
+                 <li>Investimento mínimo: R$1.000,00;</li>
+                 <li>Prazo mínimo 1 ano ou 12 meses;</li> 
+                 <li>Rendimento: 18% a.a.</li>
+             </ul>
+             <form action="simular">
+                    <div class="inv-box">
+                        <input type="number" name="valor" id="valorinv">
+                        <label>Valor á Investir</label>
+                    </div>
+                    <div class="inv-box">
+                        <input type="number" name="prazo" id="prazoinv">
+                        <label>Prazo</label>
+                    </div>
+                    <a href="#res" onclick="simular()">
+                    <span></span>  
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Simular
+                    </a>
+                    <div id="res">
+                        
+                    </div>
+              </form>  
+        </section>
     </main>
+    <footer>
+        <div class="logo">
+           <a href=""><img src="img/Design sem nome (2).png" alt="Budeli Capital"></a> 
+        </div>
+        <div class="nav-footer">
+            <a href="#" data-id="serviços">Serviços</a><br>
+            <a href="#" data-id="contato">Contato</a><br>
+            <a href="#" data-id="sobre">Sobre</a><br>
+            <a href="#" data-id="blog">Blog</a><br>
+        </div>
+        <div class="ende">
+            <p>Curitiba, Bairro Água Verde, Rua Pasteur N°463.</p>
+            <img src="img/budeli/unnamed.png" alt="">
+        </div>
+        <div class="social">
+            <a href=""><img src="img/icones-sociais/facebook.png" alt=""></a>
+            <a href=""><img src="img/icones-sociais/instagram.png" alt=""></a>
+            <a href=""><img src="img/icones-sociais/linkedin-logo.png" alt=""></a>
+            <a href=""><img src="img/icones-sociais/whatsapp.png" alt="whatsapp"></a>
+            <p>Telefone: (41) 3308-3165 <br>
+                Email: atendimento@budelicapital.com.br</p>
+        </div>
+    </footer>
 </body>
 <script src="mobile-navbar.js"></script>
+<script src="TabNavigation.js"></script>
+<script src="script.js"></script>
 </html>
