@@ -35,17 +35,15 @@
                 Saiba mais
             </a>
         </div>
-        <section id="bv">
-            <div class="bem-vindo" id="bv">
-                <h1>
-                     Bem-vindo(a) Budeli Capital
-                 </h1>
-             <p>"Somos uma Fintech especializada em Investimentos e Administração de <br>
-                Carteira"</p>
-             </div>
-        </section>
             <div class="tab-content">
             <section id="serviços" class="serviços">
+                <div class="bem-vindo">
+                    <h1>
+                         Bem-vindo(a) Budeli Capital
+                     </h1>
+                 <p>"Somos uma Fintech especializada em Investimentos e Administração de <br>
+                    Carteira"</p>
+                 </div>
            <h1>Conheça Nossos Serviços</h1>
            <div class="layout1">
                <div class="credito-consignado">
@@ -143,35 +141,30 @@
          </section>
          <section id="blog"></section>
             </div>
-            <section class="simulador">
-             <h2>
-                    Simulador Budeli Capital
-             </h2>
-             <ul>
-                 <li>Investimento mínimo: R$1.000,00;</li>
-                 <li>Prazo mínimo 1 ano ou 12 meses;</li> 
-                 <li>Rendimento: 18% a.a.</li>
-             </ul>
-             <form action="simular">
-                    <div class="inv-box">
-                        <input type="number" name="valor" id="valorinv">
-                        <label>Valor á Investir</label>
-                    </div>
-                    <div class="inv-box">
-                        <input type="number" name="prazo" id="prazoinv">
-                        <label>Prazo</label>
-                    </div>
-                    <a href="#res" onclick="simular()">
-                    <span></span>  
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Simular
-                    </a>
-                    <div id="res">
-                        
-                    </div>
-              </form>  
+            <section class="Simulador">
+                <div class="simulador">
+                    <h2>Simulador de Investimento</h2>
+                    <ul>
+                      <li>Valor minimo: R$1.000,00;</li>
+                      <li>Prazo minimo: 1 ano;</li>
+                      <li>Taxa de juros: 18% a.a.</li>
+                    </ul>
+                    <form>
+                        <div class="dados">
+                            <input type="number" name="" required="" id="valor-investido">
+                             <label>Valor Investido</label>
+                        </div>
+                        <div class="dados">
+                             <input type="number" name="" required="" id="tempo">
+                             <label>Tempo em Meses</label>
+                        </div>
+                        <input type="button" value="Simular" class="simular" onclick="Calcular()">
+                        <div id="res"></div>  
+                    </form>
+                </div>
+                <div class="imagens">
+                    <img src="img/geral/4.png" alt="">
+                </div>
         </section>
     </main>
     <footer>
@@ -200,5 +193,4 @@
 </body>
 <script src="mobile-navbar.js"></script>
 <script src="TabNavigation.js"></script>
-<script src="script.js"></script>
 </html>

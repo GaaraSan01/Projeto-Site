@@ -89,13 +89,11 @@ main{
     font-style: oblique;
     padding: 20px;
     background: white;
-    width: 70%;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .bem-vindo h1 {
     color: var(--azul-escuro);
-    padding: 5vh;
     font-size: 2em;
 }
 .fundo {
@@ -103,7 +101,7 @@ main{
     center center;
     background-color: black;
     background-size: cover;
-    height: 82vh;
+    height: 78vh;
 }
 .fundo h1 {
     font: 2em;
@@ -135,185 +133,99 @@ main{
                 0 0 50px var(--azul-escuro),
                 0 0 100px var(--azul-escuro);
 }
+.Simulador{
+    position: relative;
+    height: 89vh;
+    background:linear-gradient(40deg, var(--azul-escuro), var(--verde-esc));
 
-
+}
+.imagens img{
+    height: 100%;
+    width: 100%;
+}
+.imagens{
+    height: 100%;
+    width: 50%;
+}
 .simulador {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    height: 480px;
     width: 400px;
-    background:linear-gradient(120deg, var(--azul-escuro), var(--verde-esc));
-    margin: 12px;
     padding: 40px;
-    margin: auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    transform: translate(140%, -50%);
+    background: rgba(0, 0, 0, 0.74);
     box-sizing: border-box;
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.384);
-    color: var(--cinza);
+    box-shadow: 0 15px 25px black;
+    border-radius: 10px;
 }
 .simulador ul {
-    margin: 0 0 20px;
-    font-size: 1em;
-    color: white;
+  padding-bottom: 20px;
+  color: white;
 }
 .simulador h2 {
-    text-align: center;
-    padding: 0;
     margin: 0 0 30px;
+    padding: 0;
+    color: #f1f1f1;
+    text-align: center;
 }
-.simulador .inv-box {
+.simulador .dados {
     position: relative;
 }
-.simulador .inv-box input {
+.simulador .dados input {
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px 0;
     font-size: 1em;
-    color: #f1f1f1;
+    color: white;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid white;
     outline: none;
     background: transparent;
 }
-
-.simulador .inv-box label {
+.simulador .dados label {
     position: absolute;
     top: 0%;
     left: 0;
     padding: 10px 0;
     font-size: 1em;
-    color: #f1f1f1;
+    color: white;
     pointer-events: none;
     transition: .5s;
 }
 
-.simulador .inv-box input:focus ~ label,
-.simulador .inv-box input:valid ~ label{
+.simulador .dados input:focus ~ label,
+.simulador .dados input:valid ~ label{
     top: -20px;
     left: 0;
-    color: #f1f1f1;
-    font-size: 14px;
+    color: #03e9f4;
+    font-size: 12px;
 }
 
-.simulador form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px  20px;
-    color: var(--cinza);
-    font-size: 1em;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 30px;
-    letter-spacing: 4px;
-}
-
-.simulador a:hover {
-    background: var(--cinza);
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 5px var(--cinza),
-                0 0 25px var(--cinza),
-                0 0 50px var(--cinza),
-                0 0 100px var(--cinza);
-}
-
-.simulador a span {
-    position: absolute;
-    display: block;
-}
-
-.simulador a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--verde));
-    animation: btn-anim1 1s linear infinite;
-}
-
-@keyframes btn-anim1 {
-    0% {
-        left: -100%;
-    }
-    50%, 100% {
-        left: 100%;
-    }
-}
-
-.simulador a span:nth-child(2){
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, var(--verde));
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s;
-}
-
-@keyframes btn-anim2 {
-    0%{
-        top: -100%;
-    }
-    50%, 100% {
-        top: 100%;
-    }
-}
-
-.simulador a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, var(--verde));
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s;
-}
-
-@keyframes btn-anim3 {
-    0%{
-        right: -100%;
-    }
-    50%,100% {
-        right: 100%;
-    }
-}
-.simulador a span:nth-child(4){
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, var(--verde));
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s;
-}
-
-@keyframes btn-anim4 {
-    0%{
-        bottom: -100%;
-    }
-    50%, 100%{
-        bottom: 100%;
-    }
-}
-
-#res {
-    font-size: 1.2em;
+#res{
     background: #f1f1f1;
-    color: rgba(0, 0, 0, 0.767);
-    border-radius: 4px;
+    color: var(--verde-esc);
     padding: 5px;
-    margin-top: 50px;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: 0 0 5px #f1f1f170,
-                0 0 20px #f1f1f173,
-                0 0 40px #f1f1f170,
-                0 0 60px #f1f1f175;
-    
+    border-radius: 10px;
 }
-
-#res.active {
-    display: block;
+.simular{
+    height: 48px;
+    width: 100%;
+    outline: none;
+    background: linear-gradient(120deg, var(--verde-esc), var(--azul), var(--azul-escuro));
+    background-size: 200%;
+    margin-bottom: 32px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.simular:hover{
+    background-position: right;
 }
 
 .nav-lista{
@@ -397,7 +309,6 @@ main{
 }
 
 .serviços{
-    background-color: #f1f1f1;
     height: auto;
     padding: 10px;
 }
@@ -413,7 +324,6 @@ main{
 
 .layout1 {
     display: flex;
-
     align-content: center;
 }
 .layout2 {
