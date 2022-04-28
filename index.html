@@ -51,21 +51,26 @@
             <h3>O que á Emprestimo Consignado?</h3>
             <p> Empréstimo consignado é uma modalidade de crédito destinada a aposentados, 
                 pensionistas e servidores públicos. No consignado,
-                o valor das parcelas de seu empréstimo é descontado automaticamente de sua folha de pagamento ou benefício do INSS.</p>
+                o valor das parcelas de seu empréstimo é descontado automaticamente de 
+                sua folha de pagamento ou benefício do INSS.</p>
+                <input type="button" value="contratar">
            </div>
            <div class="investimento">
               <h2>Investimentos</h2>
                <p>Invista em Nossa carteira de Investimento Renda Variável, como Ações & Fundos. </p>
+               <input type="button" value="Saiba Mais">
            </div>
            <div class="renda-fixa">
                <h2>Renda Fixa</h2>
                <p>Também temos á Renda Fixa Budeli da qual temos uma Rentabilidade de 18% a.a.</p>
+               <input type="button" value="contratar">
            </div>
            <div class="fgts">
                <h2>Antecipe seu FGTS</h2>
                <p>
                    Faça á antecipação do seu FGTS, e tenha o dinheiro em mãos em até 48h.
                </p>
+               <input type="button" value="contratar">
            </div>
            </div>
            <div class="layout2">
@@ -78,12 +83,14 @@
                     Provident illum sit eos ab perferendis aut praesentium fugit ad quidem. 
                     Repudiandae earum repellat provident quam officiis tenetur tempora atque consequuntur doloremque.
                </p>
+               <input type="button" value="contratar">
            </div>
            <div class="seguros-budeli">
                <h2>Seguros Budeli</h2>
                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Ad minima amet voluptatem ex officiis nostrum reiciendis optio molestiae iusto.
                 Sapiente sint sed deserunt incidunt autem nisi repellat fugit laborum dolorem.</p>
+                <input type="button" value="contratar">
            </div>
            <div class="credito-empresarial">
                <h2>Crédito Empresarial</h2>
@@ -92,9 +99,12 @@
                    Dicta repellendus officia dolor eligendi maiores a laborum odit amet,<br> deserunt numquam facere temporibus.
                    Reiciendis commodi aperiam tempore consectetur nemo ad inventore!
                 </p>
+                <input type="button" value="contratar">
            </div>
            </div>
-           
+           <div class="conheça-parceiros">
+
+           </div>
             </section>
             <section id="contatos" class="contato">
             <div class="container">
@@ -111,33 +121,39 @@
                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             </div>
-            <div class="formulario-cont">
-               <form action="contatos">
-                   <div class="cont-box">
-                       <input type="text" name="nome" id="nome" class="nome-client">
-                        <label for="nome">Nome</label>
-                   </div>
-                   <div class="cont-box">
-                         <input type="email" name="contato-email" id="contato-email" class="email-client">
-                         <label for="email">Email </label>
-                   </div>
-                   <div class="cont-box">
-                        <input type="text" name="assunto" id="assunto"  class="assunto-client">
-                        <label for="assunto">Assunto </label>
-                   </div>
-                
-                    <input type="button" value="Enviar" class="enviar">
-             </form> 
-            </div>
-            
+            <div class="formulario">
+                <h2>Entre em Contato</h2>
+                <form>
+                  <div class="user-box">
+                    <input type="name" required="" id="valor-investido">
+                    <label>Nome</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="email" required="" id="tempo">
+                    <label>E-mail</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" required="" id="tempo">
+                    <label>Assunto</label>
+                  </div>
+                  <input type="button" value="Enviar" class="enviar-form">
+                  </div>
+                </form>
+              </div>
          </section>
          <section id="sobre" class="sobre">
-            <h1>
+             <div class="container-sobre">
+                 <h1>
                 Quem Somos?
             </h1>
             <p>
-                
+                A Budeli Capital foi fundada no ano de 2018, como um fundo de Investimento em Ações e Debêntures e alguns outros investimentos Sofisticados. <br>
+             Começamos arrecadando Clientes para investir em nossa carteira de Investimentos, fazendo assim, vários clientes a terem maiores lucros com Renda Variável podendo chegar a 20% a.a. <br>
+                No final de 2021, nosso fundo comprou a Bless Finanças que está no mercado desde 2005, assim adquirindo novos 
+                serviços à disposição nossos clientes e colaboradores.
             </p>
+            <input type="button" value="Entre em Contato">
+             </div>
          </section>
          <section id="blog"></section>
             </div>
@@ -151,11 +167,11 @@
                     </ul>
                     <form>
                         <div class="dados">
-                            <input type="number" name="" required="" id="valor-investido">
+                            <input type="number" name="" required="" id="valor-investid">
                              <label>Valor Investido</label>
                         </div>
                         <div class="dados">
-                             <input type="number" name="" required="" id="tempo">
+                             <input type="number" name="" required="" id="temp">
                              <label>Tempo em Meses</label>
                         </div>
                         <input type="button" value="Simular" class="simular" onclick="Calcular()">

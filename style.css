@@ -88,12 +88,13 @@ main{
     text-align: center;
     font-style: oblique;
     padding: 20px;
-    background: white;
+    box-shadow: 1px 1px 2px #0d147a49;
+    transform: translate(0%, 30%);
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .bem-vindo h1 {
-    color: var(--azul-escuro);
+    color: black;
     font-size: 2em;
 }
 .fundo {
@@ -136,7 +137,7 @@ main{
 .Simulador{
     position: relative;
     height: 89vh;
-    background:linear-gradient(40deg, var(--azul-escuro), var(--verde-esc));
+    background: #090b3dd2;
 
 }
 .imagens img{
@@ -208,6 +209,8 @@ main{
     color: var(--verde-esc);
     padding: 5px;
     border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
 }
 .simular{
     height: 48px;
@@ -310,12 +313,10 @@ main{
 
 .serviços{
     height: auto;
-    padding: 10px;
 }
 
 .serviços h1 {
     text-align: center;
-    padding-top: 1em;
     padding-bottom: 1em;
     font-size: 2em;
     color: #0d147a;
@@ -353,9 +354,10 @@ h2 {
 }
 
 .contato {
+    position: relative;
     background:linear-gradient(120deg, var(--azul-escuro), var(--verde-esc));
     padding: 4%;
-    position: relative;
+    height: 145vh;
 }
 
 .container {
@@ -367,27 +369,30 @@ h2 {
     padding: 12%;
     background-color: #f1f1f1;
     border-radius: 10px;
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.384);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.699);
 }
-
-.formulario-cont {
-   position: inherit;
-   top: 10%;
-   left: 50%;
-   width: 400px;
-   padding: 40px;
-   transform: translate(-50%, 10%);
-   background: rgba(0, 0, 0, 0.575);
-   box-sizing: border-box;
-   box-shadow: 0 15px 25px black;
-   border-radius: 10px;
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, 15%);
+    background: rgba(0, 0, 0, 0.575);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px black;
+    border-radius: 10px;
 }
-
-.formulario-cont .cont-box  {
+.formulario h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #f1f1f1;
+    text-align: center;
+}
+.formulario .user-box {
     position: relative;
 }
-
-.formulario-cont .cont-box input {
+.formulario .user-box input {
     width: 100%;
     padding: 10px 0;
     font-size: 1em;
@@ -398,33 +403,31 @@ h2 {
     outline: none;
     background: transparent;
 }
-
-.formulario-cont .cont-box label {
-   position: absolute;
-   top: 0%;
-   left: 0;
-   padding: 10px 0;
-   font-size: 1em;
-   color: #f1f1f1;
-   pointer-events: none;
-   transition: 0.5s;
+.formulario .user-box label {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
 }
 
-.formulario-cont .cont-box input:focus ~ label,
-.formulario-cont .cont-box input:valid ~ label{
+.formulario .user-box input:valid ~ label,
+.formulario .user-box input:valid ~ label,
+.formulario .user-box input:focus ~ label{
     top: -20px;
     left: 0;
     color: #03e9f4;
     font-size: 12px;
 }
-
-.enviar {
-    height: 48px;
+.enviar-form{
+    height: 45px;
     width: 100%;
     outline: none;
     background: linear-gradient(120deg, var(--verde-esc), var(--azul), var(--azul-escuro));
     background-size: 200%;
-    margin-bottom: 32px;
     color: white;
     font-size: 1em;
     font-weight: bold;
@@ -433,8 +436,31 @@ h2 {
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
-.enviar:hover {
+.enviar-form:hover{
     background-position: right;
+}
+
+.sobre{
+    height: 92vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.sobre .container-sobre{
+    position: absolute;
+    height: 350px;
+    width: 900px;
+    padding: 40px;
+    transform: translate(17%, 20%);
+    background: var(--azul-escuro);
+    color: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.589);
+}
+.sobre .container-sobre h1{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 50px;
 }
 
 footer {
@@ -468,7 +494,6 @@ footer .logo img {
     line-height: 1.5em;
 }
 
-
 .ende{
     width: 330px;
     min-height: 150px;
@@ -495,7 +520,6 @@ footer .logo img {
     border-radius: 50%;
     background-color: #ffffffd5;
 }
-
 
 .social p {
     color:#f1f1f1;
