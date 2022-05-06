@@ -62,15 +62,16 @@ nav ul li a.active::after {
 }
 .logo-img {
     display: flex;
-    height: 15vh;
-    width: 15vh;
+    height: 16vh;
+    width: 16vh;
     padding: 0;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 .logo-img img {
     height: 100%;
     width: 100%;
+    border-radius: 50%;
 }
 nav{
     display: flex;
@@ -105,7 +106,6 @@ main{
     height: 78vh;
 }
 .fundo h1 {
-    font: 2em;
     font-weight: 300;
     padding-top: 200px;
     padding-bottom: 50px;
@@ -314,6 +314,10 @@ main{
 .serviços{
     height: auto;
 }
+.container-serviços{
+    justify-content: center;
+    align-items: center;
+}
 
 .serviços h1 {
     text-align: center;
@@ -322,42 +326,14 @@ main{
     color: #0d147a;
     font-family: 'Roboto';
 }
-
-.layout1 {
-    display: flex;
-    align-content: center;
-}
-.layout2 {
-    display: flex;
-    align-items: center;
-    padding-left: 10%;
-}
-
-.credito-consignado, .investimento, .renda-fixa, .credito-veiculo, .seguros-budeli, .credito-empresarial, .fgts {
-    width: 300px;
-    text-align: center;
-    margin: 2%;
-    background: rgb(23, 2, 43);
-    padding: 20px;
-    box-sizing: border-box;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 2px #0d147a3a;
-    border-radius: 10px;
-}
-h2 {
-    color: #f1f1f1;
-    padding-bottom: 20px;
-}
-
-.credito-consignado, .investimento, .renda-fixa, .credito-veiculo, .seguros-budeli, .credito-empresarial, .fgts p{
-    color: #53c0a7;
-}
-
 .contato {
     position: relative;
     background:linear-gradient(120deg, var(--azul-escuro), var(--verde-esc));
     padding: 4%;
     height: 145vh;
+}
+.container h1{
+    padding: 10px;
 }
 
 .container {
@@ -447,7 +423,7 @@ h2 {
     justify-content: center;
 }
 .sobre .container-sobre{
-    position: absolute;
+    position: relative;
     height: 350px;
     width: 900px;
     padding: 40px;
@@ -457,10 +433,32 @@ h2 {
     border-radius: 20px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.589);
 }
+.sobre .container-sobre p{
+    text-align: justify;
+    color: var(--cinza);
+    padding-bottom: 20px;
+}
 .sobre .container-sobre h1{
     text-align: center;
     padding: 10px;
     padding-bottom: 50px;
+}
+#entre-contato{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    background: linear-gradient(120deg, var(--verde-esc), var(--azul));
+    background-size: 200%;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+#entre-contato:hover{
+    background-position: right;
 }
 
 footer {
