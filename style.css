@@ -11,6 +11,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 a {
     color:#fff;
@@ -42,6 +44,7 @@ nav ul li a:hover::after,
 nav ul li a.active::after {
     width: 100%;
 }
+
 .tab-content>section {
     animation: up 1s;
   }
@@ -80,6 +83,7 @@ nav{
     font-family: 'Roboto';
     background: var(--azul-escuro);
     height: 20vh;
+    width: 100%;
 }
 
 main{
@@ -135,10 +139,9 @@ main{
                 0 0 100px var(--azul-escuro);
 }
 .Simulador{
-    position: relative;
     height: 89vh;
-    background: #090b3dd2;
-
+    background: #f1f1f1;
+    display: flex;
 }
 .imagens img{
     height: 100%;
@@ -149,14 +152,11 @@ main{
     width: 50%;
 }
 .simulador {
-    position: absolute;
-    top: 50%;
-    left: 18%;
+    margin: auto;
     height: 480px;
     width: 400px;
     padding: 40px;
-    transform: translate(140%, -50%);
-    background: rgba(0, 0, 0, 0.74);
+    background: rgba(5, 5, 26, 0.911);
     box-sizing: border-box;
     box-shadow: 0 15px 25px black;
     border-radius: 10px;
@@ -254,6 +254,9 @@ main{
     body {
         overflow-x: hidden; /* Para econder o que está fora da página. */
     }
+    .imagens {
+        display: none;
+    }
     .fundo p {
         padding-top: 35vh;
         padding-left: 10vh;
@@ -314,11 +317,44 @@ main{
 .serviços{
     height: auto;
 }
-.container-serviços{
-    justify-content: center;
-    align-items: center;
+.pessoa-fisica{
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(300px, 1fr));
+    overflow: hidden;
+    padding: 50px;
+    justify-items: center;
+}
+.parceiro{
+    background:linear-gradient(120deg, white, #f1f1f1);
+    padding-top: 10px;
+}
+.pessoa-juridica{
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    background:linear-gradient(120deg, white, #f1f1f1);
 }
 
+.container-serv{
+    height: 220px;
+    width: 250px;
+    background: var(--azul-escuro);
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px black;
+}
+
+.container-serv h3{
+    padding: 5px 0;
+    text-align: center;
+}
+.container-serv p {
+    text-align: left ;
+}
 .serviços h1 {
     text-align: center;
     padding-bottom: 1em;
@@ -330,30 +366,34 @@ main{
     position: relative;
     background:linear-gradient(120deg, var(--azul-escuro), var(--verde-esc));
     padding: 4%;
-    height: 145vh;
 }
+
 .container h1{
     padding: 10px;
 }
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(400px, 1fr));
 }
 .entre-contato {
-    width: 300px;
-    margin-right: 5%;
-    padding: 12%;
+    height: 450px;
+    width: 600px;
     background-color: #f1f1f1;
     border-radius: 10px;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.699);
+    text-align: center;
+    padding-top: 25%;
+}
+.entre-contato ul {
+    list-style: none;
 }
 .formulario {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    margin: auto;
+    margin-top: 50px;
     width: 400px;
     padding: 40px;
-    transform: translate(-50%, 15%);
     background: rgba(0, 0, 0, 0.575);
     box-sizing: border-box;
     box-shadow: 0 15px 25px black;
@@ -417,17 +457,14 @@ main{
 }
 
 .sobre{
-    height: 92vh;
+    height: 90vh;
     width: 100%;
-    align-items: center;
-    justify-content: center;
 }
 .sobre .container-sobre{
-    position: relative;
-    height: 350px;
+    margin: auto;
+    margin-top:  10%;
     width: 900px;
     padding: 40px;
-    transform: translate(17%, 20%);
     background: var(--azul-escuro);
     color: #f1f1f1;
     border-radius: 20px;
@@ -465,7 +502,9 @@ footer {
     background:linear-gradient(120deg, var(--azul-escuro), var(--verde-esc)) ;
     min-height: 250px;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(400px, 1fr));
 }
 footer .logo{
     display: flex;
@@ -485,8 +524,8 @@ footer .logo img {
 .nav-footer{
     width: 300px;
     min-height: 150px;
-    padding: 30px;
-    margin-top: 50px;
+    padding: 20px;
+    margin-top: 30px;
     font-family: 'Roboto';
     letter-spacing: 4px;
     line-height: 1.5em;
