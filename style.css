@@ -83,7 +83,6 @@ nav{
     font-family: 'Roboto';
     background: var(--azul-escuro);
     height: 20vh;
-    width: 100%;
 }
 
 main{
@@ -98,7 +97,7 @@ main{
     margin: auto;
     margin-bottom: 100px;
 }
-.bem-vindo h1 {
+.serviços .bem-vindo h1 {
     color: black;
     font-size: 2em;
 }
@@ -108,25 +107,29 @@ main{
     background-color: black;
     background-size: cover;
     height: 78vh;
+    display: flex;
 }
-.fundo h1 {
-    font-weight: 300;
-    padding-top: 200px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-    color: #f1f1f1;
+
+.texto{
+    text-align: center;
+    color: var(--cinza);
+    padding: 20px;
+    margin: auto;
+}
+.text h1 {
+    text-align: center;
+    font-weight: 700;
 }
 
 .fundo a {
-    margin: 0 100px 0;
-    position: relative;
+    scroll-behavior: smooth;
+    min-width: 200px;
     display: inline-block;
     padding: 10px  20px;
     color: var(--cinza);
     font-size: 1em;
     text-decoration: none;
     text-transform: uppercase;
-    overflow: hidden;
     transition: .5s;
     letter-spacing: 4px;
     background: var(--azul-escuro);
@@ -142,6 +145,7 @@ main{
     height: 89vh;
     background: #f1f1f1;
     display: flex;
+    border-bottom: #036666 0.5px;
 }
 .imagens img{
     height: 100%;
@@ -154,6 +158,7 @@ main{
 .simulador {
     margin: auto;
     height: 480px;
+    max-width: 90%;
     width: 400px;
     padding: 40px;
     background: rgba(5, 5, 26, 0.911);
@@ -250,45 +255,6 @@ main{
     margin: 8px;
     transition: 0.3s;
 }
-@media (max-width: 999px) {
-    body {
-        overflow-x: hidden; /* Para econder o que está fora da página. */
-    }
-    .imagens {
-        display: none;
-    }
-    .fundo p {
-        padding-top: 35vh;
-        padding-left: 10vh;
-    }
-
-    .fundo a {
-        margin-left: 10vh;
-    }
-    .nav-lista {
-        position: absolute;
-        top: 20vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: var(--azul-escuro);
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-    .nav-lista li {
-       margin-left: 0;
-       opacity: 0;
-    }
-    .mobile-menu {
-        display: block;
-    }
-    .logo-img {
-        width: 15vh;
-        height: 15vh;
-}
 
 .nav-lista.active {
     transform: translateX(0);
@@ -312,17 +278,21 @@ main{
     .mobile-menu.active .line3 {
      transform: rotate(45deg) translate(-5px, -7px);
     }
-}
 
 .serviços{
     height: auto;
+}
+.serviços .serviços-budeli h1{
+    color:var(--azul-escuro) ;
+}
+.serviços .parceiro h1{
+    color: var(--azul-escuro);
 }
 .pessoa-fisica{
     display: grid;
     grid-template-columns: 
     repeat(auto-fit, minmax(300px, 1fr));
     overflow: hidden;
-    padding: 50px;
     justify-items: center;
 }
 .parceiro{
@@ -359,111 +329,51 @@ main{
     text-align: center;
     padding-bottom: 1em;
     font-size: 2em;
-    color: #0d147a;
+    color: #f1f1f1;
     font-family: 'Roboto';
 }
+
 .contato {
-    position: relative;
-    background:linear-gradient(120deg, var(--azul-escuro), var(--verde-esc));
-    padding: 4%;
-}
+    height: 100vh;
+    width: 100%;
+    padding: 5%;
 
-.container h1{
-    padding: 10px;
 }
-
-.container {
+.formu-cont{
     display: grid;
-    grid-template-columns: 
-    repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-items: center;
 }
-.entre-contato {
-    height: 450px;
-    width: 600px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.699);
+
+.contato h1{
     text-align: center;
-    padding-top: 25%;
+    padding-bottom: 20px;
+}
+.entre-contato{
+    width: 500px;
+    height: 200px;
+    max-width: 90%;
+    padding: 10px;
+    background: blue;
 }
 .entre-contato ul {
     list-style: none;
 }
-.formulario {
-    margin: auto;
-    margin-top: 50px;
-    width: 400px;
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.575);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px black;
-    border-radius: 10px;
+.formulario{
+    width: 500px;
+    max-width: 90%;
+    height: 200px;
+    background: green;
 }
-.formulario h2 {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #f1f1f1;
-    text-align: center;
-}
-.formulario .user-box {
-    position: relative;
-}
-.formulario .user-box input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 1em;
-    color: white;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    background: transparent;
-}
-.formulario .user-box label {
-    position: absolute;
-    top: 0%;
-    left: 0;
-    padding: 10px 0;
-    font-size: 1em;
-    color: white;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.formulario .user-box input:valid ~ label,
-.formulario .user-box input:valid ~ label,
-.formulario .user-box input:focus ~ label{
-    top: -20px;
-    left: 0;
-    color: #03e9f4;
-    font-size: 12px;
-}
-.enviar-form{
-    height: 45px;
-    width: 100%;
-    outline: none;
-    background: linear-gradient(120deg, var(--verde-esc), var(--azul), var(--azul-escuro));
-    background-size: 200%;
-    color: white;
-    font-size: 1em;
-    font-weight: bold;
-    border: unset;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-.enviar-form:hover{
-    background-position: right;
-}
-
 .sobre{
-    height: 90vh;
-    width: 100%;
+    height: auto;
 }
 .sobre .container-sobre{
     margin: auto;
     margin-top:  10%;
-    width: 900px;
+    margin-bottom: 10%;
+    width: 70%;
     padding: 40px;
     background: var(--azul-escuro);
     color: #f1f1f1;
@@ -499,70 +409,88 @@ main{
 }
 
 footer {
-    background:linear-gradient(120deg, var(--azul-escuro), var(--verde-esc)) ;
-    min-height: 250px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 
-    repeat(auto-fit, minmax(400px, 1fr));
-}
-footer .logo{
-    display: flex;
-    height: 17vh;
-    width: 17vh;
-    padding: 0;
-    background-color: white;
-    border-radius: 50%;
-    margin: 20px;
-}
-footer .logo img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-}
-
-.nav-footer{
-    width: 300px;
-    min-height: 150px;
-    padding: 20px;
-    margin-top: 30px;
-    font-family: 'Roboto';
-    letter-spacing: 4px;
-    line-height: 1.5em;
-}
-
-.ende{
-    width: 330px;
-    min-height: 150px;
-    padding: 30px;
-    color: #f1f1f1;
-    font-family: 'Roboto';
-    margin-top: 50px;
-}
-
-.ende img {
-    padding-top: 15px;
+    background:linear-gradient(120deg, var(--azul-escuro), var(--verde-esc));
+    padding-top: 10vh;
+    max-width: 100%;
+    justify-items: center;
 }
 
 .social{
-    width: 320px;
+    padding: 10px;
     min-height: 150px;
-    padding: 30px;
-    margin-top: 50px;
     justify-items: center;
+    text-align: center;
 }
 
 .social img {
     width: 32px;
     border-radius: 50%;
-    background-color: #ffffffd5;
 }
 
 .social p {
-    color:#f1f1f1;
-    padding-top: 50px;
     line-height: 2em;
     color: #fff;
 }
-
+.copy{
+    font-size: smaller;
+    font-style: italic;
+}
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden; /* Para econder o que está fora da página. */
+    }
+    header a {
+        text-align: center;
+        padding: 0;
+    }
+    .nav-lista {
+        position: absolute;
+        top: 20vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: var(--azul-escuro);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-lista li {
+       margin-left: 0;
+       opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .logo-img {
+        width: 12vh;
+        height: 12vh;
+        border-radius: 50%;
+        margin: 3px;
+    }
+    .text {
+        text-align: center;
+        padding: 10%;
+    }
+    .sobre .container-sobre{
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+    .Simulador .imagens{
+        display: none;
+    }
     
+}
+@media (max-width:310px){
+    body{
+        overflow-x: hidden;
+    }
+    nav .logo {
+        font-size: 0.9em;
+    }
+    footer{
+        max-width: 100%;
+    }
+}

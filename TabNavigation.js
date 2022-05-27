@@ -3,7 +3,7 @@ const $ = document.querySelector.bind(document)
 function TabNavigation(){
 
     const html = {
-        links: [...$('.tab-links').children, ...$('.tab-links1').children, ...$('.tab-links2').children, ...$('.tab-links3').children],
+        links: [...$('.tab-links').children, ...$('.tab-links1').children, ...$('.tab-links2').children],
         contents: [...$('.tab-content').children],
         openTab: $('[data-open]')
     }

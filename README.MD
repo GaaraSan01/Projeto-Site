@@ -6,7 +6,7 @@
 - [x] Area de Contatos
 - [x] Sobre Nós
 - [] Blog
-- [] Página de Serviços
+- [x] Página de Serviços
 - [x] Simulador de Investimento
 - [x] Copywriting
 - [] Responsividade 
@@ -15,8 +15,8 @@
 
 ## API do Site 
 
-- [] API de Email
-- [] API de Servidor
+- [x] API de Email
+- [x] API de Servidor
 - [] API de Ações
 * Tentar fazer a API para mostrar as Cotações de Ações da Bolsa de Valores
 
