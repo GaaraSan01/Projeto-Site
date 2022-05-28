@@ -334,7 +334,6 @@ main{
 }
 
 .contato {
-    height: 100vh;
     width: 100%;
     padding: 5%;
 
@@ -366,8 +365,8 @@ main{
 .formulario{
     margin: auto;
     height: 480px;
-    max-width: 90%;
-    width: 90%;
+    max-width: 95%;
+    width: 95%;
     padding: 40px;
     box-sizing: border-box;
     border-radius: 10px;
