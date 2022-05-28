@@ -351,20 +351,80 @@ main{
     padding-bottom: 20px;
 }
 .entre-contato{
-    width: 500px;
-    height: 200px;
+
+    margin: auto;
+    height: 400px;
     max-width: 90%;
-    padding: 10px;
-    background: blue;
+    width: 90%;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    letter-spacing: 1.5px;
 }
 .entre-contato ul {
     list-style: none;
 }
 .formulario{
-    width: 500px;
+    margin: auto;
+    height: 480px;
     max-width: 90%;
-    height: 200px;
-    background: green;
+    width: 90%;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.formulario .user-box{
+    position: relative;
+}
+.formulario .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1em;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #0d147a;
+    outline: none;
+    background: transparent;
+}
+.formulario .user-box label{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1em;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+.formulario .user-box input:focus ~ label,
+.formulario .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: var(--azul-escuro);
+    font-size: 12px;
+}
+.enviar-form{
+    height: 48px;
+    width: 40%;
+    outline: none;
+    background: linear-gradient(120deg, var(--verde-esc), var(--azul), var(--azul-escuro));
+    background-size: 200%;
+    margin-bottom: 32px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.enviar-form:hover{
+    background-position: right;
+}
+.assunto{
+    height: 40px;
 }
 .sobre{
     height: auto;
