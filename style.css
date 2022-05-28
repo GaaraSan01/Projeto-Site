@@ -351,12 +351,10 @@ main{
     padding-bottom: 20px;
 }
 .entre-contato{
-
     margin: auto;
-    height: 400px;
+    height: 200px;
     max-width: 90%;
     width: 90%;
-    padding: 40px;
     box-sizing: border-box;
     border-radius: 10px;
     text-align: center;
