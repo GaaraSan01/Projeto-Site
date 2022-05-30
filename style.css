@@ -141,7 +141,7 @@ main{
                 0 0 100px var(--azul-escuro);
 }
 .Simulador{
-    height: auto;
+    height: 80vh;
     background: #f1f1f1;
     display: flex;
     border-bottom: #036666 0.5px;

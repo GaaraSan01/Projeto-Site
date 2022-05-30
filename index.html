@@ -54,7 +54,7 @@
                     </h1>
                 </div>
                 <div class="pessoa-fisica">
-                    <div class="container-serv">
+                    <div class="container-serv" onclick="paraForm()">
                         <i data-feather="user"></i>
                         <h3>
                             Conta Individual
@@ -186,6 +186,18 @@
                         <div class="user-box">
                             <input type="email" required="" name="email" id="tempo">
                             <label>E-mail</label>
+                        </div>
+                        <div class="user-box">
+                            <input list="browsers" name="browser" id="browser">
+                            <datalist id="browsers">
+                                <option value="Conta Individual">
+                                <option value="Cartão de Crédito Pré-pago">
+                                <option value="Serviços Banking">
+                                <option value="Serviços Digitais">
+                                <option value="Recebimento de Contas de Consumo">
+                                <option value=" Antecipe seu FGTS">
+                              </datalist>
+                            <label>Quais Serviços</label>
                         </div>
                         <div class="user-box">
                             <input type="text" required="" name="mensagem" id="tempo" class="assunto">
