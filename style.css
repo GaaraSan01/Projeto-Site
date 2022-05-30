@@ -141,7 +141,7 @@ main{
                 0 0 100px var(--azul-escuro);
 }
 .Simulador{
-    height: 80vh;
+    height: 92vh;
     background: #f1f1f1;
     display: flex;
     border-bottom: #036666 0.5px;
@@ -505,6 +505,12 @@ footer {
 .copy{
     font-size: smaller;
     font-style: italic;
+}
+@media(max-width:400px){
+    .formu-cont{
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media (max-width: 999px) {
     body {
