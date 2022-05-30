@@ -14,3 +14,28 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cinza);
+    background: linear-gradient(120deg, var(--verde-esc), var(--azul-escuro));
+}
+main a{
+    color: white;
+    padding-top: 20px;
+    letter-spacing: 0.8px;
+}
+.logo{
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}

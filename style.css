@@ -124,7 +124,6 @@ main{
 .fundo a {
     scroll-behavior: smooth;
     min-width: 200px;
-    display: inline-block;
     padding: 10px  20px;
     color: var(--cinza);
     font-size: 1em;
@@ -142,7 +141,7 @@ main{
                 0 0 100px var(--azul-escuro);
 }
 .Simulador{
-    height: 89vh;
+    height: auto;
     background: #f1f1f1;
     display: flex;
     border-bottom: #036666 0.5px;
@@ -317,6 +316,13 @@ main{
     margin: 20px;
     border-radius: 20px;
     box-shadow: 0 5px 15px black;
+    transition: transform 0.5s;
+    transform: translateX(0.5) scale(1);
+    cursor: pointer;
+}
+.container-serv:hover{
+    background: var(--verde-esc);
+    transform: translateX(5px) scale(1.1);
 }
 
 .container-serv h3{
@@ -336,8 +342,6 @@ main{
 
 .contato {
     width: 100%;
-    padding: 5%;
-
 }
 .formu-cont{
     display: grid;
@@ -421,8 +425,17 @@ main{
 .enviar-form:hover{
     background-position: right;
 }
-.assunto{
-    height: 40px;
+.back{
+    background: url(https://uds.com.br/blog/wp-content/uploads/2021/07/pexels-pixabay-316093.jpg)
+    no-repeat center center;
+    background-size: cover;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.back h1{
+    color: #f1f1f1;
 }
 .sobre{
     height: auto;
