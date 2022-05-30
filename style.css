@@ -511,6 +511,9 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    .entre-contato{
+        padding-top: 50px;
+    }
 }
 @media (max-width: 999px) {
     body {
