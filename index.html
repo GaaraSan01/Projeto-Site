@@ -9,269 +9,283 @@
     <title>Budeli Capital</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    function Loading(){
+        document.querySelector(".pre-load").style.display = "none"
+        document.querySelector(".conteudo").style.display = "block"
+
+    }
+    Loading()
+</script>
 <body>
-    <header>
-        <nav>
-            <a class="logo-img" href="#"><img src="img/20220505_092446_0000.png" alt=""></a>
-            <a class="logo" href="/index.html">Budeli Capital</a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-                <div class="tabs">
-                    <ul class="nav-lista">
-                     <li class="tab-links"><a data-id="serviços" data-open>Serviços</a></li>
-                     <li class="tab-links1"><a data-id="contatos" href="#contatos" data-defalt>Contato</a></li>
-                     <li class="tab-links2"><a data-id="sobre" href="#sobre">Sobre</a></li>
-                     <li><a href="/blog.html">Blog</a>
-                    </ul>
-                </div>
-        </nav>
-    </header>
     <main>
-        <div class="tab-content">
-            <section class="serviços" id="serviços">
-                <div class="fundo">
-                    <div class="texto">
-                        <h1> Invista em seu Futuro com à <br> Budeli Capital</h1>
-                    <a href="#bem-vindo">
-                        Saiba mais
-                    </a>
-                    </div>
-                </div>
-                <div class="bem-vindo" id="bem-vindo">
-                    <h1>
-                        Bem Vindo(a) à Budeli Capital
-                    </h1>
-                    <p>
-                        Somos uma Fintech Especializada em Investimentos e Administração de Carteira.
-                    </p>
-                </div>
-                <div class="serviços-budeli">
-                    <h1>
-                        Conheça Nossos Serviços
-                    </h1>
-                </div>
-                <div class="pessoa-fisica">
-                    <div class="container-serv" onclick="paraForm()">
-                        <i data-feather="user"></i>
-                        <h3>
-                            Conta Individual
-                        </h3>
-                        <p>
-                            Uma conta diferente em um banco diferente, sem taxas e com cartões zero
-                            anuidade, Budeli capital mais que um Banco Digital.
-                        </p>
-                    </div>
-                    <div class="container-serv">
-                        <i data-feather="credit-card"></i>
-                        <h3>
-                            Cartões de Crédito Pré-pago
-                        </h3>
-                        <p>
-                            Cartão de Crédito pré-pago virtual o seu cartão emergencial.
-                        </p>
-                    </div>
-                    <div class="container-serv">
-                        <i data-feather="lock"></i>
-                        <h3>
-                            Serviços de Banking
-                        </h3>
-                        <p>
-                            Ted, Pix, Boleto e Bolix, p2p: Tudo o que você precisa em um só lugar.
-                        </p>
-                    </div>
-                    <div class="container-serv">
-                        <i data-feather="globe"></i>
-                        <h3>
-                            Serviços Digitais
-                        </h3>
-                        <p>
-                            Netflix, Recarga de Celular entre outros: Entreterimento e recarga para seu celular? 
-                            Sim nós temos.
-                        </p>
-                    </div>
-                    <div class="container-serv">
-                        <i data-feather="smartphone"></i>
-                        <h3>
-                            Recebimento de Contas de Consumo
-                        </h3>
-                        <p>
-                            As contas do seu dia a dia pagas na palma de mão, sem fila e sem stress.
-                        </p>
-                    </div>
-                    <div class="container-serv">
-                        <i data-feather="smile"></i>
-                        <h3>
-                            Creditos
-                        </h3>
-                        <p>
-                            Sim, temos Créditos Pessoal, Crédito Consignado(Aposentados, Pensionistas, Servidores Publicos), 
-                        </p>
-                    </div>
-                    <div class="container-serv">
-                        <i data-feather="feather"></i>
-                        <h3>
-                            Antecipe seu FGTS
-                        </h3>
-                        <p>
-                            Está precisando de dinheiro?<br>
-                            Antecipe seu FGTS em até 20 minutos.
-                        </p>
-                    </div>
-                    <div class="container-serv">
-                        <i data-feather="dollar-sign"></i>
-                        <h3>
-                            Saque Digital (Banco 24h)
-                        </h3>
-                        <p>
-                            Precisou de dinheiro? Você pode sacar em qualquer caixa 24h, sem taxas.
-                        </p>
-                    </div>
-                </div>
-                <div class="parceiro">
-                    <h1>Seja Nosso Parceiro de Negócios</h1>
-                </div>
-                <div class="pessoa-juridica">
-                    <div class="container-serv">
-                        <i data-feather="paperclip"></i>
-                        <h3>
-                            Folha de Pagamento
-                        </h3>
-                        <p>
-                            A Budeli Capital disponibiliza um serviços para empresas, aqui você não precisa
-                            se preocupar em pagar seus colaboradores todos os meses manualmente, a gente faz esse
-                            processo para você.
-                        </p>
-                    </div>
-                    <div class="container-serv">
-                        <i data-feather="bar-chart-2"></i>
-                        <h3>
-                            Investimento em Startups
-                        </h3>
-                        <p>
-                            Traga sua sua empresa para novos Investidores do Mercado.
-                        </p>
-                    </div>
-                    <div class="container-serv">
-                        <i data-feather="user-plus"></i>
-                        <h3>
-                            Seja Parceiro(a) Budeli
-                        </h3>
-                        <p>
-                            Seja um dos nossos parceiros representantes, e se torne um Partner para crescer
-                            junto à Budeli Capital.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="contato" id="contatos">
-                <div class="back"><h1>Entre em Contato</h1></div>
-                <div class="formu-cont">
-                   <div class="entre-contato">
-                    <ul>
-                        <li><i data-feather="message-circle"></i> Whatsapp: (41) 9 9990-0295</li>
-                        <li><i data-feather="phone"></i> Telefone: (41) 3308-3165</li>
-                        <li><i data-feather="mail"></i> atendimento@budelicapital.com.br</li>
-                    </ul>     
-                </div>
-                <div class="formulario">
-                    <form action="https://formsubmit.co/atendimento@budelicapital.com.br" method="post">
-                        <div class="user-box">
-                            <input type="hidden" name="_next" value="https://budelicapital.com.br/obrigado">
-                            <input type="name" name="name" required="" id="valor-investido">
-                            <label>Nome</label>
-                        </div>
-                        <div class="user-box">
-                            <input type="email" required="" name="email" id="tempo">
-                            <label>E-mail</label>
-                        </div>
-                        <div class="user-box">
-                            <input list="browsers" name="browser" id="browser">
-                            <datalist id="browsers">
-                                <option value="Conta Individual">
-                                <option value="Cartão de Crédito Pré-pago">
-                                <option value="Serviços Banking">
-                                <option value="Serviços Digitais">
-                                <option value="Recebimento de Contas de Consumo">
-                                <option value=" Antecipe seu FGTS">
-                              </datalist>
-                            <label>Quais Serviços</label>
-                        </div>
-                        <div class="user-box">
-                            <input type="text" required="" name="mensagem" id="tempo" class="assunto">
-                            <label>Assunto</label>
-                        </div>
-                        <input type="submit" value="Enviar" class="enviar-form" onclick="enviar()">
-                        <div id="resp"></div>
-                    </form>
-                </div> 
-                </div>
-                
-            </section>
-            <section class="sobre" id="sobre">
-                <div class="container-sobre">
-                    <h1>
-                        Quem Somos?
-                    </h1>
-                    <p>
-                        A Budeli Capital existe a mais de 28 anos transformando vidas através do mercado financeiro, uma vida de cada vez.
-                        Nós trabalhamos com possoas, entendemos e no relacionamos com pessoas. Uma conexão duradoura que deixa um rastro de
-                        sucesso por quase três decadas.
-                    </p>
-                    <p>
-                        Trabalhamos com fundamentos solidos ancorados na transparencia e atendimento humanizado, aqui você não é mais um numero, é
-                        o nosso parceiro de Negócios.
-                    </p>
-                    <p>
-                        Buscamos criar um relacionamento pautado na confiança mutua entre os clientes e a empresa, intermediando negociações
-                        de investimentos juntos aos bancos e corretoras, visando economisar tempo e levando educação financeira para todo o Brasil.
-                    </p>
-                    <input type="button" value="Entre em Contato" id="entre-contato" onclick="paraForm()">
-                </div>
-            </section>
-            <section id="blog"></section>
+        <div class="pre-load">
+            <div class="circle"></div>
         </div>
-        <section class="Simulador">
-            <div class="imagens">
-                <img src="img/geral/4.png" alt="Simulador de Investimentos">
-            </div>
-            <div class="simulador">
-                <h2>Simulador de Investimento</h2>
-                <ul>
-                    <li>Valor minimo: R$1.000,00;</li>
-                    <li>Prazo minimo: 1 ano;</li>
-                    <li>Taxa de juros: 18% a.a.</li>
-                </ul>
-                <form>
-                    <div class="dados">
-                        <input type="number" name="" required="" id="valor-investid">
-                        <label for="">Valor Investido</label>
+        <div class="conteudo" onload="Loading()">
+            <header>
+                <nav>
+                    <a class="logo-img" href="#"><img src="img/20220505_092446_0000.png" alt=""></a>
+                    <a class="logo" href="/index.html">Budeli Capital</a>
+                    <div class="mobile-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
                     </div>
-                    <div class="dados">
-                        <input type="number" name="" required="" id="temp">
-                        <label for="">Tempo em Meses</label>
+                        <div class="tabs">
+                            <ul class="nav-lista">
+                             <li class="tab-links"><a data-id="serviços" data-open>Serviços</a></li>
+                             <li class="tab-links1"><a data-id="contatos" href="#contatos" data-defalt>Contato</a></li>
+                             <li class="tab-links2"><a data-id="sobre" href="#sobre">Sobre</a></li>
+                             <li><a href="/blog.html">Blog</a>
+                            </ul>
+                        </div>
+                </nav>
+            </header>
+                <div class="tab-content">
+                    <section class="serviços" id="serviços">
+                        <div class="fundo">
+                            <div class="texto">
+                                <h1> Invista em seu Futuro com à <br> Budeli Capital</h1>
+                            <a href="#bem-vindo">
+                                Saiba mais
+                            </a>
+                            </div>
+                        </div>
+                        <div class="bem-vindo" id="bem-vindo">
+                            <h1>
+                                Bem Vindo(a) à Budeli Capital
+                            </h1>
+                            <p>
+                                Somos uma Fintech Especializada em Investimentos e Administração de Carteira.
+                            </p>
+                        </div>
+                        <div class="serviços-budeli">
+                            <h1>
+                                Conheça Nossos Serviços
+                            </h1>
+                        </div>
+                        <div class="pessoa-fisica">
+                            <div class="container-serv" onclick="paraForm()">
+                                <i data-feather="user"></i>
+                                <h3>
+                                    Conta Individual
+                                </h3>
+                                <p>
+                                    Uma conta diferente em um banco diferente, sem taxas e com cartões zero
+                                    anuidade, Budeli capital mais que um Banco Digital.
+                                </p>
+                            </div>
+                            <div class="container-serv">
+                                <i data-feather="credit-card"></i>
+                                <h3>
+                                    Cartões de Crédito Pré-pago
+                                </h3>
+                                <p>
+                                    Cartão de Crédito pré-pago virtual o seu cartão emergencial.
+                                </p>
+                            </div>
+                            <div class="container-serv">
+                                <i data-feather="lock"></i>
+                                <h3>
+                                    Serviços de Banking
+                                </h3>
+                                <p>
+                                    Ted, Pix, Boleto e Bolix, p2p: Tudo o que você precisa em um só lugar.
+                                </p>
+                            </div>
+                            <div class="container-serv">
+                                <i data-feather="globe"></i>
+                                <h3>
+                                    Serviços Digitais
+                                </h3>
+                                <p>
+                                    Netflix, Recarga de Celular entre outros: Entreterimento e recarga para seu celular? 
+                                    Sim nós temos.
+                                </p>
+                            </div>
+                            <div class="container-serv">
+                                <i data-feather="smartphone"></i>
+                                <h3>
+                                    Recebimento de Contas de Consumo
+                                </h3>
+                                <p>
+                                    As contas do seu dia a dia pagas na palma de mão, sem fila e sem stress.
+                                </p>
+                            </div>
+                            <div class="container-serv">
+                                <i data-feather="smile"></i>
+                                <h3>
+                                    Creditos
+                                </h3>
+                                <p>
+                                    Sim, temos Créditos Pessoal, Crédito Consignado(Aposentados, Pensionistas, Servidores Publicos), 
+                                </p>
+                            </div>
+                            <div class="container-serv">
+                                <i data-feather="feather"></i>
+                                <h3>
+                                    Antecipe seu FGTS
+                                </h3>
+                                <p>
+                                    Está precisando de dinheiro?<br>
+                                    Antecipe seu FGTS em até 20 minutos.
+                                </p>
+                            </div>
+                            <div class="container-serv">
+                                <i data-feather="dollar-sign"></i>
+                                <h3>
+                                    Saque Digital (Banco 24h)
+                                </h3>
+                                <p>
+                                    Precisou de dinheiro? Você pode sacar em qualquer caixa 24h, sem taxas.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="parceiro">
+                            <h1>Seja Nosso Parceiro de Negócios</h1>
+                        </div>
+                        <div class="pessoa-juridica">
+                            <div class="container-serv">
+                                <i data-feather="paperclip"></i>
+                                <h3>
+                                    Folha de Pagamento
+                                </h3>
+                                <p>
+                                    A Budeli Capital disponibiliza um serviços para empresas, aqui você não precisa
+                                    se preocupar em pagar seus colaboradores todos os meses manualmente, a gente faz esse
+                                    processo para você.
+                                </p>
+                            </div>
+                            <div class="container-serv">
+                                <i data-feather="bar-chart-2"></i>
+                                <h3>
+                                    Investimento em Startups
+                                </h3>
+                                <p>
+                                    Traga sua sua empresa para novos Investidores do Mercado.
+                                </p>
+                            </div>
+                            <div class="container-serv">
+                                <i data-feather="user-plus"></i>
+                                <h3>
+                                    Seja Parceiro(a) Budeli
+                                </h3>
+                                <p>
+                                    Seja um dos nossos parceiros representantes, e se torne um Partner para crescer
+                                    junto à Budeli Capital.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="contato" id="contatos">
+                        <div class="back"><h1>Entre em Contato</h1></div>
+                        <div class="formu-cont">
+                           <div class="entre-contato">
+                            <ul>
+                                <li><i data-feather="message-circle"></i> Whatsapp: (41) 9 9990-0295</li>
+                                <li><i data-feather="phone"></i> Telefone: (41) 3308-3165</li>
+                                <li><i data-feather="mail"></i> atendimento@budelicapital.com.br</li>
+                            </ul>     
+                        </div>
+                        <div class="formulario">
+                            <form action="https://formsubmit.co/atendimento@budelicapital.com.br" method="post">
+                                <div class="user-box">
+                                    <input type="hidden" name="_next" value="https://budelicapital.com.br/obrigado">
+                                    <input type="name" name="name" required="" id="valor-investido">
+                                    <label>Nome</label>
+                                </div>
+                                <div class="user-box">
+                                    <input type="email" required="" name="email" id="tempo">
+                                    <label>E-mail</label>
+                                </div>
+                                <div class="user-box">
+                                    <input list="browsers" name="browser" id="browser">
+                                    <datalist id="browsers">
+                                        <option value="Conta Individual">
+                                        <option value="Cartão de Crédito Pré-pago">
+                                        <option value="Serviços Banking">
+                                        <option value="Serviços Digitais">
+                                        <option value="Recebimento de Contas de Consumo">
+                                        <option value=" Antecipe seu FGTS">
+                                      </datalist>
+                                    <label>Quais Serviços</label>
+                                </div>
+                                <div class="user-box">
+                                    <input type="text" required="" name="mensagem" id="tempo" class="assunto">
+                                    <label>Assunto</label>
+                                </div>
+                                <input type="submit" value="Enviar" class="enviar-form" onclick="enviar()">
+                                <div id="resp"></div>
+                            </form>
+                        </div> 
+                        </div>
+                        
+                    </section>
+                    <section class="sobre" id="sobre">
+                        <div class="container-sobre">
+                            <h1>
+                                Quem Somos?
+                            </h1>
+                            <p>
+                                A Budeli Capital existe a mais de 28 anos transformando vidas através do mercado financeiro, uma vida de cada vez.
+                                Nós trabalhamos com possoas, entendemos e no relacionamos com pessoas. Uma conexão duradoura que deixa um rastro de
+                                sucesso por quase três decadas.
+                            </p>
+                            <p>
+                                Trabalhamos com fundamentos solidos ancorados na transparencia e atendimento humanizado, aqui você não é mais um numero, é
+                                o nosso parceiro de Negócios.
+                            </p>
+                            <p>
+                                Buscamos criar um relacionamento pautado na confiança mutua entre os clientes e a empresa, intermediando negociações
+                                de investimentos juntos aos bancos e corretoras, visando economisar tempo e levando educação financeira para todo o Brasil.
+                            </p>
+                            <input type="button" value="Entre em Contato" id="entre-contato" onclick="paraForm()">
+                        </div>
+                    </section>
+                    <section id="blog"></section>
+                </div>
+                <section class="Simulador">
+                    <div class="imagens">
+                        <img src="img/geral/4.png" alt="Simulador de Investimentos">
                     </div>
-                    <input type="button" value="Simular" class="simular" onclick="Calcular()">
-                    <div id="res"></div>
-                </form>
-            </div>
-        </section>
+                    <div class="simulador">
+                        <h2>Simulador de Investimento</h2>
+                        <ul>
+                            <li>Valor minimo: R$1.000,00;</li>
+                            <li>Prazo minimo: 1 ano;</li>
+                            <li>Taxa de juros: 18% a.a.</li>
+                        </ul>
+                        <form>
+                            <div class="dados">
+                                <input type="number" name="" required="" id="valor-investid">
+                                <label for="">Valor Investido</label>
+                            </div>
+                            <div class="dados">
+                                <input type="number" name="" required="" id="temp">
+                                <label for="">Tempo em Meses</label>
+                            </div>
+                            <input type="button" value="Simular" class="simular" onclick="Calcular()">
+                            <div id="res"></div>
+                        </form>
+                    </div>
+                </section>
+                <footer>
+                    <div class="social">
+                        <a href="https://www.facebook.com/Budeli-Capital-109207184905276"><img src="img/icones-sociais/facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/budelicapital/"><img src="img/icones-sociais/instagram.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/budeli-capital-3526bb23a/"><img src="img/icones-sociais/linkedin-logo.png" alt=""></a>
+                        <a href="https://wa.me/5541999900295"><img src="img/icones-sociais/whatsapp.png" alt="whatsapp"></a>
+                        <p>Telefone: (41) 3308-3165</p>
+                        <p>antendimento@budelicapital.com.br</p>
+                        <p class="copy"><a href="https://www.budelicapital.com.br">&copy;BudeliCapital - 
+                            Todos os direitos reservados.
+                        </a></p> 
+                    </div>
+                </footer>
+        </div>
     </main>
-    <footer>
-        <div class="social">
-            <a href="https://www.facebook.com/Budeli-Capital-109207184905276"><img src="img/icones-sociais/facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/budelicapital/"><img src="img/icones-sociais/instagram.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/budeli-capital-3526bb23a/"><img src="img/icones-sociais/linkedin-logo.png" alt=""></a>
-            <a href="https://wa.me/5541999900295"><img src="img/icones-sociais/whatsapp.png" alt="whatsapp"></a>
-            <p>Telefone: (41) 3308-3165</p>
-            <p>antendimento@budelicapital.com.br</p>
-            <p class="copy"><a href="https://www.budelicapital.com.br">&copy;BudeliCapital - 
-                Todos os direitos reservados.
-            </a></p> 
-        </div>
-    </footer>
+    
 </body>
 <script src="mobile-navbar.js"></script>
 <script src="TabNavigation.js"></script>

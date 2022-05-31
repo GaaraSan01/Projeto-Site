@@ -14,6 +14,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 a {
     color:#fff;
     text-decoration: none; 
@@ -575,3 +576,43 @@ footer {
         max-width: 100%;
     }
 }
+.pre-load{
+    background:#f1f1f1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.circle{
+    position: absolute;
+    width:115px;
+    height:115px;
+    border-radius:50%;
+    border:10px solid #0d147a;
+    animation:circle 3.5s ease-in-out infinite;
+  }  
+  @keyframes circle{
+    0%{
+      border-color:#0332df;
+      transform:sacle(1);
+    }
+    25%{
+      border-color:#469d89;
+      transform:scale(0.5);
+    }
+    50%{
+      border-color:#036666;
+      transform:scale(1.0);
+    }
+    75%{
+      border-color: #0332df;
+      transform: scale(0.8);
+    }
+    100%{
+      border-color: #0d147a;
+      transform:scale(1);
+    }
+  }
+  .conteudo{
+      display: none;
+  }
