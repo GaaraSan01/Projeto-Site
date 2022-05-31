@@ -5,7 +5,7 @@ function TabNavigation(){
     const html = {
         links: [...$('.tab-links').children, ...$('.tab-links1').children, ...$('.tab-links2').children],
         contents: [...$('.tab-content').children],
-        openTab: $('[data-open]')
+        openTab: $('[data-open]'),
     }
 
     function RemoverTodosContents(){
@@ -55,6 +55,8 @@ function TabNavigation(){
 }
 
 window.addEventListener('load', () =>{
+    $('.pre-load').style.display = "none"
+    $('.conteudo').style.display = "block"
     const tabNavigation = TabNavigation()
     tabNavigation.init()
 })

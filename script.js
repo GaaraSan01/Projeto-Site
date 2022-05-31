@@ -24,4 +24,4 @@ function Calcular(){
     $("#valor-investid").value = ''
     $("#valor-investid").focus()
     $("#temp").value = ''
-}
+}4
