@@ -107,7 +107,7 @@ main{
     center center;
     background-color: black;
     background-size: cover;
-    height: 78vh;
+    height: 82vh;
     display: flex;
 }
 
@@ -444,7 +444,7 @@ main{
 }
 .sobre .container-sobre{
     margin: auto;
-    margin-top:  10%;
+    margin-top:  5%;
     margin-bottom: 10%;
     width: 70%;
     padding: 40px;
@@ -507,6 +507,16 @@ footer {
 .copy{
     font-size: smaller;
     font-style: italic;
+}
+.fundosobre{
+    background: url(/img/fundo.png)
+    no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media(max-width:735px){
     .formu-cont{

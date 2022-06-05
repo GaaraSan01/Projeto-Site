@@ -5,11 +5,11 @@
 - [x] Imagem de Fundo
 - [x] Area de Contatos
 - [x] Sobre Nós
-- [] Blog
+- [x] Blog
 - [x] Página de Serviços
 - [x] Simulador de Investimento
 - [x] Copywriting
-- [] Responsividade 
+- [x] Responsividade 
 
 --------------------------------------------------------------------------------
 
