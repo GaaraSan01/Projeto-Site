@@ -7,7 +7,7 @@ function TabNavigation(){
         contents: [...$('.tab-content').children],
         openTab: $('[data-open]'),
     }
-
+    
     function RemoverTodosContents(){
         html.contents.forEach( section =>{
             section.style.display = "none"

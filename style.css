@@ -109,17 +109,21 @@ main{
     background-size: cover;
     height: 82vh;
     display: flex;
+    justify-content:flex-start;
+    align-items: center;
 }
 
 .texto{
-    text-align: center;
     color: var(--cinza);
+    height: 30vh;
+    max-width: 400px;
     padding: 20px;
-    margin: auto;
-}
-.text h1 {
+    margin-left: 50px;
     text-align: center;
+}
+.texto h1 {
     font-weight: 700;
+    text-align: justify;
 }
 
 .fundo a {
@@ -130,16 +134,10 @@ main{
     font-size: 1em;
     text-decoration: none;
     text-transform: uppercase;
-    transition: .5s;
     letter-spacing: 4px;
     background: var(--azul-escuro);
     color: white;
     border-radius: 5px;
-    justify-items: center;
-    box-shadow: 0 0 5px var(--azul-escuro),
-                0 0 25px var(--azul-escuro),
-                0 0 50px var(--azul-escuro),
-                0 0 100px var(--azul-escuro);
 }
 .Simulador{
     height: 92vh;
@@ -534,13 +532,14 @@ footer {
     header a {
         text-align: center;
         padding: 0;
+
     }
     .nav-lista {
         position: absolute;
         top: 20vh;
         right: 0;
         width: 50vw;
-        height: 92vh;
+        height: 80vh;
         background: var(--azul-escuro);
         flex-direction: column;
         align-items: center;
@@ -561,9 +560,9 @@ footer {
         border-radius: 50%;
         margin: 3px;
     }
-    .text {
-        text-align: center;
-        padding: 10%;
+    .texto{
+        margin: 0;
+        text-align: left;
     }
     .sobre .container-sobre{
         width: 100%;
