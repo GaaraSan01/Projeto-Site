@@ -14,6 +14,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+html, body{
+    position: relative;
+    overflow-x: hidden;
+}
 
 a {
     color:#fff;
